@@ -59,3 +59,15 @@ body,
     transform: translateY(-12px);
   }
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #e7d08a;
+}
+
+#root {
+  min-height: 100vh;
+  background: #e7d08a;
+  padding-bottom: env(safe-area-inset-bottom);
+}

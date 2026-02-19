@@ -60,48 +60,50 @@ export default function HalamanMain() {
 
   return (
     <div className="min-h-screen w-full flex justify-center bg-black overflow-x-hidden">
-      <div className="relative w-full max-w-[390px] bg-[#fff5d4] overflow-x-hidden">
-        <section className="relative min-h-screen">
-          <div className="relative w-full aspect-[390/844]">
+      <div className="relative w-full bg-[#fff5d4] overflow-x-hidden">
+        <section className="relative min-h-screen pb-[120px]">
+          <img
+            src={bg}
+            className="absolute inset-0 w-full h-full object-cover z-0"
+          />
+          <img
+            src={bg_batik_jawa1}
+            className="absolute inset-0 w-full h-full object-cover z-10"
+          />
+          <div className="relative z-10 flex flex-col items-center pt-[120px] pb-[200px]">
             <img
-              src={bg}
-              className="absolute inset-0 w-full h-full object-cover z-0"
+              src={bingkai}
+              className="absolute top-[0px] inset-0 w-full z-40"
             />
-            <img
-              src={bg_batik_jawa1}
-              className="absolute inset-0 w-full h-full object-cover z-10"
-            />
-            <img src={bingkai} className="absolute inset-0 w-full z-40" />
 
             <img
               src={lentera1}
-              className="absolute top-[210px] left-[197px] w-[200px] z-30 animate-[floatSlow_4s_ease-in-out_infinite]"
+              className="absolute top-[210px] left-[200px] w-[200px] z-30 animate-[floatSlow_4s_ease-in-out_infinite]"
             />
             <img
               src={lentera2}
-              className="absolute top-[215px] left-[142px] w-[200px] z-30 animate-[floatSlow_5s_ease-in-out_infinite]"
+              className="absolute top-[215px] left-[145px] w-[200px] z-30 animate-[floatSlow_5s_ease-in-out_infinite]"
             />
             <img
               src={lentera3}
-              className="absolute top-[205px] left-[165px] w-[60px] z-30 animate-[floatSlow_5s_ease-in-out_infinite]"
+              className="absolute top-[205px] left-[170px] w-[60px] z-30 animate-[floatSlow_5s_ease-in-out_infinite]"
             />
             <img
               src={lentera4}
-              className="absolute top-[205px] right-[125px] w-[60px] z-30 animate-[floatSlow_5s_ease-in-out_infinite]"
+              className="absolute top-[205px] right-[122px] w-[60px] z-30 animate-[floatSlow_5s_ease-in-out_infinite]"
             />
             <img
               src={lentera5}
-              className="absolute top-[215px] right-[142px] w-[200px] z-30 animate-[floatSlow_7s_ease-in-out_infinite]"
+              className="absolute top-[215px] right-[139px] w-[200px] z-30 animate-[floatSlow_7s_ease-in-out_infinite]"
             />
             <img
               src={lentera6}
-              className="absolute top-[210px] right-[197px] w-[200px] z-30 animate-[floatSlow_8s_ease-in-out_infinite]"
+              className="absolute top-[210px] right-[194px] w-[200px] z-30 animate-[floatSlow_8s_ease-in-out_infinite]"
             />
 
-            {/* CONTAINER */}
             <img
               src={container}
-              className="absolute top-[80px] left-[45px] w-[300px] z-30 animate-scale-in"
+              className="absolute top-[80px] left-[49px] w-[300px] z-30 animate-scale-in"
             />
 
             <img
@@ -135,7 +137,7 @@ export default function HalamanMain() {
                   visible: { opacity: 1, y: 0 },
                 }}
                 transition={{ duration: 1 }}
-                className="relative bottom-[27px] left-[78px] text-center font-oleo text-[48px] leading-[50px] mb-6 text-stroke-brown"
+                className="relative bottom-[145px] left-[5px] text-center font-oleo text-[48px] leading-[50px] mb-6 text-stroke-brown"
               >
                 Undangan <br /> Khitanan
               </motion.h1>
@@ -146,7 +148,7 @@ export default function HalamanMain() {
                   visible: { opacity: 1, scale: 1 },
                 }}
                 transition={{ duration: 1 }}
-                className="relative left-[78px] top-[5px] w-[170px] h-[220px] mb-6 mt-[40px]"
+                className="relative bottom-[100px] left-[4px] w-[170px] h-[220px] mb-6 mt-[40px]"
               >
                 <img src={ellipse} className="w-full h-full object-contain" />
               </motion.div>
@@ -157,7 +159,7 @@ export default function HalamanMain() {
                   visible: { opacity: 1, y: 0 },
                 }}
                 transition={{ duration: 1 }}
-                className="relative left-[78px] -top-[10px] text-center font-arvo text-stroke-arvo text-[36px]"
+                className="relative bottom-[120px] left-[4px] text-center font-arvo text-stroke-arvo text-[36px]"
               >
                 Affan Giyatsa <br /> Nurfalah
               </motion.h2>
@@ -168,7 +170,7 @@ export default function HalamanMain() {
                   visible: { opacity: 1, y: 0 },
                 }}
                 transition={{ duration: 1 }}
-                className="relative left-[78px] -top-[35px] text-center font-arapey text-stroke-arapey text-[15px] mt-4 leading-relaxed"
+                className="relative left-[4px] bottom-[140px] text-center font-arapey text-stroke-arapey text-[15px] mt-4 leading-relaxed"
               >
                 Putra kedua dari : <br />
                 Bpk. Farhan Afandi & Ibu Ari Kurniyati
@@ -180,7 +182,7 @@ export default function HalamanMain() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.5 }}
               transition={{ duration: 1 }}
-              className="absolute -bottom-[29px] flex justify-center gap-[32px] z-20"
+              className="absolute top-[685px] flex justify-center gap-[32px] z-20"
             >
               <img src={wayang1} className="w-full elegant-float" />
               <img src={wayang2} className="w-full elegant-float" />
@@ -193,7 +195,7 @@ export default function HalamanMain() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: false, amount: 0.4 }}
               transition={{ duration: 1 }}
-              className="absolute -bottom-[14px] left-[80px] w-[90px] z-20"
+              className="absolute top-[716px] left-[80px] w-[90px] z-20"
             />
 
             <motion.img
@@ -202,7 +204,7 @@ export default function HalamanMain() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: false, amount: 0.4 }}
               transition={{ duration: 1 }}
-              className="absolute -bottom-[13px] right-[78px] w-[90px] z-20"
+              className="absolute top-[715px] right-[78px] w-[90px] z-20"
             />
           </div>
         </section>
@@ -210,7 +212,7 @@ export default function HalamanMain() {
         <section className="relative min-h-[1400px] bg-[#f8e197] overflow-hidden">
           <img
             src={bg_batik_jawa2}
-            className="absolute top-[68px] left-0 w-full h-[1400px] object-cover z-0"
+            className="absolute top-[68px] inset-0 w-full h-full object-cover z-0"
           />
           <motion.img
             src={batik_pembatas}
