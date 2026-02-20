@@ -97,7 +97,6 @@ export default function HalamanMain() {
             className="absolute top-[210px] right-[197px] w-[200px] z-30 animate-[floatSlow_8s_ease-in-out_infinite]"
           />
 
-          {/* CONTAINER */}
           <img
             src={container}
             className="absolute top-[80px] left-[45px] w-[300px] z-30 animate-scale-in"
@@ -404,7 +403,19 @@ export default function HalamanMain() {
             <button
               onClick={() => setIs3d((prev) => !prev)}
               style={{ padding: "10px", borderRadius: "20px 0px 20px 0px" }}
-              className="absolute top-[284px] right-[2px] text-xs bg-[#f8e197] font-arapey border-none text-stroke-arapey z-80"
+              className="absolute top-[284px] right-[2px] 
+  text-xs bg-[#f8eccc] font-arapey border-none text-stroke-arapey z-80
+
+  cursor-pointer
+  shadow-md
+  ring-1 ring-black/10
+  active:scale-95
+  active:translate-y-[1px]
+  active:shadow-sm
+  focus:outline-none
+  focus:ring-2 focus:ring-[#d4b26a]
+  select-none
+  transition-all duration-150 ease-out"
             >
               {`Lihat ${is3d ? "Denah" : "Sekitar"}`}
             </button>
