@@ -17,10 +17,10 @@ export default function HalamanUtama({ onFinish }) {
   return (
     <div
       className={`
-        relative w-full h-screen overflow-hidden
-        transition-all duration-700 ease-in-out
-        ${open ? "brightness-100" : "brightness-65"}
-      `}
+       relative w-full h-full overflow-hidden
+    transition-all duration-700 ease-in-out
+    ${open ? "brightness-100" : "brightness-65"}
+    `}
     >
       <img
         src={bg_tampilan1}
