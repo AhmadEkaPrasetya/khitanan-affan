@@ -48,7 +48,7 @@ import Stroke_Tempat from "../assets/Stroke_Tempat.svg";
 import Pin from "../assets/Pin.svg";
 import MapView from "./MapView";
 
-export default function HalamanMain() {
+export default function HalamanMain({ nama, capitalizeNama }) {
   const [scrollY, setScrollY] = useState(0);
   const [is3d, setIs3d] = useState(false);
 
@@ -319,12 +319,12 @@ export default function HalamanMain() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
           transition={{ duration: 1.3 }}
-          className="absolute top-[670px] left-1/2 -translate-x-1/2 w-[330px] max-w-md text-center"
+          className="absolute top-[675px] left-1/2 -translate-x-1/2 w-[330px] max-w-md text-center"
         >
           <p className="text-stroke-arapey text-lg font-arapey leading-relaxed">
-            Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud mengundang
-            Bapak/Ibu/Saudara/i untuk menghadiri acara Khitanan putra kami{" "}
-            <br />
+            Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud mengundang{" "}
+            {nama ? capitalizeNama(nama) : " Bapak / Ibu / Saudara /i "} untuk
+            menghadiri acara Khitanan putra kami <br />
             <br />
             <span className="font-arapey text-[22px]">
               Affan Giyatsa Nurfalah
@@ -343,7 +343,7 @@ export default function HalamanMain() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
           transition={{ duration: 2.5 }}
-          className="absolute top-[590px] w-full flex justify-center"
+          className="absolute top-[610px] w-full flex justify-center"
         >
           <div className="relative w-full">
             <img src={batik_untuk_naro_foto2} className="w-full" />

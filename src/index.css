@@ -16,30 +16,34 @@
   --font-arvo: "Arvo", serif;
 }
 
-/* Text stroke custom */
 .text-stroke-brown {
-  -webkit-text-stroke: 2.3px #3c3431; /* coklat */
-  color: #ffffff; /* isi putih */
+  -webkit-text-stroke: 2.3px #3c3431;
+  color: #ffffff;
 }
 
 .text-stroke-arvo {
-  -webkit-text-stroke: 0.5px #3c3431; /* coklat */
-  color: #ffffff; /* isi putih */
+  -webkit-text-stroke: 0.5px #3c3431;
+  color: #ffffff;
 }
 
 .text-stroke-arapey {
-  -webkit-text-stroke: 1px #2f1b13d3; /* coklat */
-  color: #000000; /* isi putih */
+  -webkit-text-stroke: 1px #2f1b13d3;
+  color: #000000;
 }
 
 .text-stroke-passions {
-  -webkit-text-stroke: 1.5px #2f1b13d3; /* coklat */
-  color: #000000; /* isi putih */
+  -webkit-text-stroke: 1.5px #2f1b13d3;
+  color: #000000;
 }
 
 .text-stroke-rouge {
-  -webkit-text-stroke: 2px #2f1b13d3; /* coklat */
-  color: #000000; /* isi putih */
+  -webkit-text-stroke: 2px #2f1b13d3;
+  color: #000000;
+}
+
+.text-Url {
+  -webkit-text-stroke: 0.4px #ffffffd3;
+  color: #080947;
 }
 
 html,

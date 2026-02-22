@@ -2,7 +2,7 @@ import { useState } from "react";
 import bg_tampilan1 from "../assets/bg_tampilan1.svg";
 import amplop from "../assets/amplop.svg";
 
-export default function HalamanUtama({ onFinish }) {
+export default function HalamanUtama({ onFinish, nama, capitalizeNama }) {
   const [open, setOpen] = useState(false);
 
   const handleClick = () => {
@@ -17,16 +17,21 @@ export default function HalamanUtama({ onFinish }) {
   return (
     <div
       className={`
-       relative w-full h-full overflow-hidden
+       relative w-full min-h-screen overflow-hidden
     transition-all duration-700 ease-in-out
     ${open ? "brightness-100" : "brightness-65"}
     `}
     >
       <img
         src={bg_tampilan1}
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover z-0"
       />
-
+      <div className="absolute top-[20px] left-1/2 -translate-x-1/2 z-10 text-Url text-lg font-arapey text-center ">
+        <h1 className="text-[29px] font-bold drop-shadow-lg">
+          Undangan untuk {nama ? capitalizeNama(nama) : " Tamu Spesial "}
+        </h1>
+        <p className="mt-2">Silahkan buka amplop ini</p>
+      </div>
       <img
         src={amplop}
         alt="Amplop"
@@ -34,6 +39,7 @@ export default function HalamanUtama({ onFinish }) {
         className={`
           absolute
           left-1/2
+          z-20
           -translate-x-1/2
           w-[150px]
           cursor-pointer
