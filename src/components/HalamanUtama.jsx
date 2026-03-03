@@ -27,7 +27,7 @@ export default function HalamanUtama({ onFinish, nama, capitalizeNama }) {
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
       <div className="absolute top-[20px] left-1/2 -translate-x-1/2 z-10 text-Url text-lg font-arapey text-center ">
-        <h1 className="text-[29px] font-bold drop-shadow-lg">
+        <h1 className="text-[26px] font-bold drop-shadow-lg">
           Undangan untuk <br />
           {nama ? capitalizeNama(nama) : " kamu "}
         </h1>
