@@ -26,12 +26,12 @@ export default function HalamanUtama({ onFinish, nama, capitalizeNama }) {
         src={bg_tampilan1}
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
-      <div className="absolute top-[20px] left-1/2 -translate-x-1/2 z-10 text-Url text-lg font-arapey text-center ">
+      <div className="absolute top-[45px] left-1/2 -translate-x-1/2 z-10 text-Url font-arapey text-center flex flex-col gap-[1px]">
         <h1 className="text-[26px] font-bold drop-shadow-lg">
           Undangan untuk <br />
           {nama ? capitalizeNama(nama) : " kamu "}
         </h1>
-        <p className="mt-2">Silahkan buka amplop ini</p>
+        <p className="text-[14px]">Silahkan buka amplop ini</p>
       </div>
       <img
         src={amplop}
